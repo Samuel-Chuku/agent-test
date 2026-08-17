@@ -1,10 +1,12 @@
-// BEFORE: Broken implementation
+// AFTER: Correct implementation
 
 function sanitizeInput(input) {
-  if (input) {
-    return input.trim();
+  if (input == null) {
+    return "";
   }
-  return "";
+  const trimmed = input.trim();
+  return trimmed.slice(0, 50);
 }
 
 module.exports = { sanitizeInput };
+
