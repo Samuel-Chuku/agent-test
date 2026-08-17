@@ -10,3 +10,4 @@ function sanitizeInput(input) {
 
 module.exports = { sanitizeInput };
 
+// This is a comment.
